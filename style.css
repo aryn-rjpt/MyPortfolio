@@ -1,0 +1,80 @@
+/* Css Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+nav{
+    width: 40%;
+    margin: 0 auto;
+    padding: 1vw;
+}
+
+.logo-title{
+    display: flex;
+    position: relative;
+    margin-top: 1vw;
+    justify-content: center;
+}
+
+.head-shadow img{
+    position: absolute;
+    height: 11vw;
+    left: 8vw;
+    bottom: -2vw;
+}
+
+
+nav h1{
+    font-family: 'Alkatra', cursive;
+    font-size: 3vw;
+    text-align: center;
+    margin: 0 0 0 5vw;
+    width: 47%;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav ul{
+    display: flex;
+    margin: 3vw 0 0 0;
+    padding-left: 0;
+    border: 1px solid white;
+    border-radius: 2vw;
+    justify-content: center;
+
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    width: 5vw;
+    overflow: hidden;
+}
+
+.nav-item .icon img{
+    width: 3vw;
+    height: 2vw;
+    margin-left: 1vw;
+}
+
+.nav-item .title{
+    font-size: 1vw;
+    color: white;
+    margin: 1vw;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+}
+
+.nav-item:hover{
+    width: max-content;
+}
+
+.nav-item:hover .title{
+    transform: translateX(0%)
+
+}
