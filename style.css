@@ -13,17 +13,15 @@ nav{
 }
 
 .logo-title{
-    display: flex;
     position: relative;
-    margin-top: 4vw;
-    justify-content: center;
 }
 
 .head-shadow img{
     position: absolute;
     height: 17vw;
-    left: 27vw;
-    bottom: 31vw;
+    left: -4vw;
+    top: -2vw;
+
 }
 
 
@@ -40,6 +38,10 @@ nav li{
     list-style: none;
 }
 
+nav a{
+    text-decoration: none;
+}
+
 nav ul{
     display: flex;
     justify-content: center;
@@ -47,6 +49,7 @@ nav ul{
     padding-left: 0;
     border: 1px solid white;
     border-radius: 2vw;
+    height: min-content;
 }
 
 .nav-item{
@@ -78,3 +81,6 @@ nav ul{
     transform: translateX(0%)
 
 }
+
+
+
