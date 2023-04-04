@@ -15,24 +15,25 @@ nav{
 .logo-title{
     display: flex;
     position: relative;
-    margin-top: 1vw;
+    margin-top: 4vw;
     justify-content: center;
 }
 
 .head-shadow img{
     position: absolute;
-    height: 11vw;
-    left: 8vw;
-    bottom: -2vw;
+    height: 17vw;
+    left: 27vw;
+    bottom: 31vw;
 }
 
 
 nav h1{
     font-family: 'Alkatra', cursive;
-    font-size: 3vw;
+    font-size: 4vw;
     text-align: center;
-    margin: 0 0 0 5vw;
-    width: 47%;
+    margin: 0 auto;
+    margin-top: 2vw;
+    width: 46%;
 }
 
 nav li{
@@ -41,12 +42,11 @@ nav li{
 
 nav ul{
     display: flex;
+    justify-content: center;
     margin: 3vw 0 0 0;
     padding-left: 0;
     border: 1px solid white;
     border-radius: 2vw;
-    justify-content: center;
-
 }
 
 .nav-item{
