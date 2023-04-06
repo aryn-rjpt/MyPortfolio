@@ -1,22 +1,32 @@
 /* Css Reset */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.heading {
+    display: block;
+    width: max-content;
+    margin: auto;
+    margin-top: 5vw;
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+
 /* Navbar */
-nav{
+nav {
     width: 40%;
     margin: 0 auto;
     padding: 1vw;
 }
 
-.logo-title{
+.logo-title {
     position: relative;
 }
 
-.head-shadow img{
+.head-shadow img {
     position: absolute;
     height: 17vw;
     left: -4vw;
@@ -25,7 +35,7 @@ nav{
 }
 
 
-nav h1{
+nav h1 {
     font-family: 'Alkatra', cursive;
     font-size: 4vw;
     text-align: center;
@@ -34,15 +44,15 @@ nav h1{
     width: 46%;
 }
 
-nav li{
+nav li {
     list-style: none;
 }
 
-nav a{
+nav a {
     text-decoration: none;
 }
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: center;
     margin: 3vw 0 0 0;
@@ -52,20 +62,20 @@ nav ul{
     height: min-content;
 }
 
-.nav-item{
+.nav-item {
     display: flex;
     align-items: center;
     width: 5vw;
     overflow: hidden;
 }
 
-.nav-item .icon img{
+.nav-item .icon img {
     width: 3vw;
     height: 2vw;
     margin-left: 1vw;
 }
 
-.nav-item .title{
+.nav-item .title {
     font-size: 1vw;
     color: white;
     margin: 1vw;
@@ -73,14 +83,118 @@ nav ul{
     transition: transform 0.3s ease-in;
 }
 
-.nav-item:hover{
+.nav-item:hover {
     width: max-content;
 }
 
-.nav-item:hover .title{
+.nav-item:hover .title {
     transform: translateX(0%)
-
 }
 
 
 
+/* Project Carousel */
+
+#myCarousel {
+    height: 30vw;
+    width: 90vw;
+    margin: 2vw auto;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px white;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: inherit;
+}
+
+.carousel-caption {
+    color: white;
+}
+
+
+
+
+/* Skills section */
+.skills .container {
+    width: 90vw;
+    height: 20vw;
+    margin: auto;
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills img {
+    width: 7vw;
+    height: 7vw;
+}
+
+.skill-card {
+    height: 13vw;
+    padding: 1vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-card span {
+    font-size: 2vw;
+    font-weight: 700;
+    padding: 1vw;
+    text-align: center;
+}
+
+
+
+/* Connection section */
+
+.connect {
+    display: flex;
+    height: 45vw;
+    padding: 1vw;
+}
+
+.connect .heading {
+    margin-top: 0;
+    width: 40%;
+    height: 100%;
+    text-align: right;
+    font-size: 8vw;
+    margin-right: 7vw;
+}
+
+.connect .links {
+    width: 50%;
+    height: 89%;
+    font-size: 4vw;
+    margin: 1vw;
+    margin-right: 4vw;
+    padding: 4vw 4vw;
+    border-radius: 50px;
+    /* background: #2f3338; */
+    /* box-shadow: 0px 0px 53px 6px #9dceff; */
+    background-image: linear-gradient(145deg, #11151b, #464b52);
+    box-shadow: 11px 11px 22px #141414, -11px -11px 22px #525252;
+}
+
+.connect .links i {
+    width: 6vw;
+}
+
+.connect .links li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.connect .links li a{
+    text-decoration: none;
+    color: #adb5bd;
+}
+
+.connect .links li:hover, .connect .links li:hover a{
+    color: white;
+}
