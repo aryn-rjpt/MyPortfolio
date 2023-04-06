@@ -15,6 +15,82 @@
 }
 
 
+/* Preloader */
+#preloader {
+    background: #000;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+
+
+.svg-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg-frame svg {
+    position: absolute;
+    transition: .5s;
+    z-index: calc(1 - (0.2 * var(--j)));
+    transform-origin: center;
+    width: 344px;
+    height: 344px;
+    fill: none;
+}
+
+.svg-frame:hover svg {
+    transform: rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
+}
+
+.svg-frame svg #center {
+    transition: .5s;
+    transform-origin: center;
+}
+
+.svg-frame:hover svg #center {
+    transform: rotate(-30deg) translateX(45px) translateY(-3px);
+}
+
+#out2 {
+    animation: rotate16 7s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+
+#out3 {
+    animation: rotate16 3s ease-in-out infinite alternate;
+    transform-origin: center;
+    stroke: #ff0;
+}
+
+#inner3,
+#inner1 {
+    animation: rotate16 4s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+
+#center1 {
+    fill: #ff0;
+    animation: rotate16 2s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+
+@keyframes rotate16 {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
 /* Navbar */
 nav {
     width: 40%;
@@ -175,8 +251,6 @@ nav ul {
     margin-right: 4vw;
     padding: 4vw 4vw;
     border-radius: 50px;
-    /* background: #2f3338; */
-    /* box-shadow: 0px 0px 53px 6px #9dceff; */
     background-image: linear-gradient(145deg, #11151b, #464b52);
     box-shadow: 11px 11px 22px #141414, -11px -11px 22px #525252;
 }
@@ -190,11 +264,12 @@ nav ul {
     cursor: pointer;
 }
 
-.connect .links li a{
+.connect .links li a {
     text-decoration: none;
     color: #adb5bd;
 }
 
-.connect .links li:hover, .connect .links li:hover a{
+.connect .links li:hover,
+.connect .links li:hover a {
     color: white;
 }
