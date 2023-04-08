@@ -1,0 +1,124 @@
+
+.heading {
+    margin: 5vw auto;
+    font-size: 8vw;
+}
+
+
+
+/* Navbar */
+.head-shadow img {
+    height: 28vw;
+    left: -6vw
+}
+
+nav {
+    width: 48%;
+}
+
+.nav-item .title {
+    font-size: 3vw;
+}
+
+nav h1 {
+    font-size: 8vw;
+}
+
+nav ul {
+    justify-content: space-around;
+}
+
+
+
+.nav-item .icon img {
+    height: 11vw;
+    margin: 0vw;
+    width: 5vw;
+}
+
+
+
+/* Skills Section */
+.skills img{
+    width: 15vw;
+    height: 15vw;
+}
+
+.skill-card{
+    height: 25vw;
+}
+
+
+/* My info */
+.my-info {
+    height: 91vw;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+
+#desktop-info-heading{
+    display: none;
+}
+
+#mobile-info-heading{
+    display: block;
+    text-align: center;
+    padding: 0;
+    height: 16vw;
+}
+
+.my-info .details{
+    margin: 5vw 6vw;
+    height: 58vw;
+    width: 58vw;
+}
+
+.my-info li {
+    font-size: 4vw;
+    text-align: center;
+    line-height: 5vw;
+
+}
+
+#desktop-details{
+    display: none;
+}
+
+#mobile-details{
+    display: block;
+}
+
+
+/* Connect section */
+
+.connect {
+    height: 91vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#desktop-connect-heading{
+    display: none;
+}
+
+#mobile-connect-heading{
+    display: block;
+    text-align: center;
+    margin: 5vw 0;
+    padding: 0;
+    height: 16vw;
+    width: 100%;
+}
+
+.connect .links{
+    margin: 5vw 6vw;
+    height: 58vw;
+    width: 58vw;
+}
+
+.connect li {
+    font-size: 6vw;
+    line-height: 10vw;
+}

@@ -231,6 +231,10 @@ nav ul {
     display: flex;
 }
 
+#mobile-info-heading{
+    display: none;
+}
+
 .my-info .heading{
     margin: 0;
     width: 50%;
@@ -242,12 +246,12 @@ nav ul {
 }
 
 .my-info .details{
-    width: 50%;
+    width: 44%;
     margin: 5vw 9vw 5vw 6vw; 
     padding: 3vw;  
-    border-radius: 50px;
+    border-radius: 3vw;
     background-image: linear-gradient(145deg, #11151b, #464b52);
-    box-shadow: 11px 11px 22px #141414, -11px -11px 22px #525252;
+    box-shadow: 1vw 1vw 1.5vw #141414, -1vw -1vw 1.5vw #525252;
 }
 
 .my-info ul{
@@ -269,7 +273,11 @@ nav ul {
 .my-info li:hover{
     color: #4f4e4e;
     border-radius: 1vw;
-    box-shadow: 36vw 0 0 0 #ffffffbd inset, -36vw 0 0 0 #ffffffbd inset;
+    box-shadow: 100vw 0 0 0 #ffffffbd inset, -100vw 0 0 0 #ffffffbd inset;
+}
+
+#mobile-details{
+    display: none;
 }
 
 
@@ -293,12 +301,12 @@ nav ul {
 .connect .links {
     width: 44%;
     height: 87%;
-    font-size: 4vw;
+    font-size: 3.6vw;
     margin: 2vw 3vw 8vw 6vw;
     padding: 4vw 4vw;
-    border-radius: 50px;
+    border-radius: 3vw;
     background-image: linear-gradient(145deg, #11151b, #464b52);
-    box-shadow: 11px 11px 22px #141414, -11px -11px 22px #525252;
+    box-shadow: 1vw 1vw 1.5vw #141414, -1vw -1vw 1.5vw #525252;
 }
 
 .connect .links i {
@@ -318,4 +326,8 @@ nav ul {
 .connect .links li:hover,
 .connect .links li:hover a {
     color: white;
+}
+
+#mobile-connect-heading{
+    display: none;
 }
