@@ -189,6 +189,134 @@ nav ul {
     color: white;
 }
 
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.active .hover-content {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 3vw;
+    top: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.active .hover-content h2 {
+    margin: 2vw;
+}
+
+
+.carousel-inner:hover .carousel-item h5 {
+    display: none;
+}
+
+
+.flip-in-hor-bottom {
+    -webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes flip-in-hor-bottom {
+    0% {
+        -webkit-transform: rotateX(80deg);
+        transform: rotateX(80deg);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes flip-in-hor-bottom {
+    0% {
+        -webkit-transform: rotateX(80deg);
+        transform: rotateX(80deg);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+        opacity: 1;
+    }
+}
+
+.flip-out-hor-top {
+    -webkit-animation: flip-out-hor-top 0.45s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: flip-out-hor-top 0.45s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes flip-out-hor-top {
+    0% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotateX(70deg);
+        transform: rotateX(70deg);
+        opacity: 0;
+    }
+}
+
+@keyframes flip-out-hor-top {
+    0% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotateX(70deg);
+        transform: rotateX(70deg);
+        opacity: 0;
+    }
+}
+
+
+.carousel-item::before {
+    content: "";
+    width: 100%;
+    height: 3%;
+    bottom: 0;
+    background-color: black;
+    position: absolute;
+    z-index: 0;
+    box-shadow: 0px 0px 12vw 10vw black;
+}
+
+.carousel-item h5 {
+    color: white;
+}
+
+.visit-btn{
+    width: 8vw;
+    background-color: rgb(238, 28, 28);
+    border: 2px solid white;
+    transition: all 0.5s;
+}
+
+.visit-btn:hover{
+    color: red;
+    background-color: rgb(255, 216, 216);
+    border: 2px solid red;
+}
 
 
 
