@@ -21,7 +21,7 @@ window.addEventListener('load', function(){
 
 $('document').ready(function(){
 
-    $('.active').on('mouseenter', function(){
+    $('.carousel-item').on('mouseenter', function(){
         $('.hover-content').css('display', 'flex')
         $('.hover-content').removeClass('flip-out-hor-top')
     }).on('mouseleave', function(){
