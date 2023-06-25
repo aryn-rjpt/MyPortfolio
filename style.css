@@ -304,6 +304,10 @@ nav ul {
     color: white;
 }
 
+[data-bs-theme=dark] .carousel .carousel-indicators [data-bs-target] {
+    background-color: #fff;
+}
+
 .visit-btn{
     width: 8vw;
     background-color: rgb(238, 28, 28);
