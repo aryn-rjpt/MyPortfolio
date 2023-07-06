@@ -1,4 +1,10 @@
 /* Css Reset */
+:root {
+    --primary-cyan: #00ffff;
+    --secondary-yellow: #ffff29;
+    --text-cyan: #005252;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,14 +23,144 @@
 
 /* Preloader */
 #preloader {
-    background: #000;
-    height: 100vh;
+    background: #0f0f0f;
     width: 100%;
-    position: fixed;
+    padding: 0vw 10vw;
+    /* position: fixed; */
     z-index: 100;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: 'Alkatra', cursive;
+}
+
+.pic {
+    padding: 0 14%;
+}
+
+.pic img {
+    width: 31vw;
+}
+
+.intro {
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 36px;
+    margin: 3vw 0;
+}
+
+#preloader a {
+    color: #ffffff85;
+    font-size: 6px;
+}
+
+.intro-proceed {
+    position: absolute;
+    bottom: 5vw;
+    right: 17vw;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    line-height: 42px;
+}
+
+#proceed {
+    display: none;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 5px 15px;
+    margin: 1vw 0vw;
+    transition: all 0.4s;
+}
+
+#proceed:hover {
+    background-color: white;
+    color: #005252;
+    border: 3px solid #005252;
 }
 
 
+
+.fade-in-top {
+    -webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+@-webkit-keyframes fade-in-top {
+    0% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-top {
+    0% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.puff-out-center {
+    -webkit-animation: puff-out-center 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+    animation: puff-out-center 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+}
+
+@-webkit-keyframes puff-out-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+}
+
+@keyframes puff-out-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+}
+
+.svg-proceed{
+    padding-left: 11vw;
+}
 
 .svg-frame {
     position: relative;
@@ -44,9 +180,11 @@
     width: 344px;
     height: 344px;
     fill: none;
+    top: 4vw;
+    /* right: 1vw; */
 }
 
-.svg-frame:hover svg {
+.svg-proceed:hover svg {
     transform: rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
 }
 
@@ -133,7 +271,7 @@ nav ul {
     justify-content: center;
     margin: 3vw 0 0 0;
     padding-left: 0;
-    border: 1px solid white;
+    border: 1px solid var(--primary-cyan);
     border-radius: 2vw;
     height: min-content;
 }
@@ -168,10 +306,22 @@ nav ul {
 }
 
 
+/* Section */
+
+.quote-section{
+    margin: 3vw 0vw;
+    
+}
+.quote{
+    text-align: center;
+    font-size: 25px;
+    line-height: 45px;
+}
+
 
 /* Project Carousel */
 
-#myCarousel {
+#carouselExampleIndicators {
     height: 30vw;
     width: 90vw;
     margin: 2vw auto;
@@ -308,17 +458,19 @@ nav ul {
     background-color: #fff;
 }
 
-.visit-btn{
+.visit-btn {
     width: 8vw;
-    background-color: rgb(238, 28, 28);
-    border: 2px solid white;
-    transition: all 0.5s;
+    background-color: white;
+    color: var(--text-cyan);
+    border: 2px solid var(--text-cyan);
+    transition: all 1s;
 }
 
-.visit-btn:hover{
-    color: red;
-    background-color: rgb(255, 216, 216);
-    border: 2px solid red;
+.visit-btn:hover {
+    color: rgb(59, 56, 56);
+    background-color: #b9fefe;
+    box-shadow: 60px 0px 0px 0px #b9fefe inset, -60px 0px 0px 0px #b9fefe inset;
+    border: 2px solid var(--text-cyan);
 }
 
 
@@ -461,4 +613,13 @@ nav ul {
 
 #mobile-connect-heading {
     display: none;
+}
+
+
+nav, section, .my-info, .connect{
+    display: none;
+}
+
+#preloader {
+    display: grid;
 }

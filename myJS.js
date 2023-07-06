@@ -11,20 +11,33 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
-
-// Preloader 
-var loader = document.getElementById('preloader')
+ 
 
 window.addEventListener('load', function(){
-    loader.style.display = 'none';
+    $("#proceed").css("display", "block");
 })
 
-$('document').ready(function(){
 
+$('document').ready(function(){
+    
     $('.carousel-item').on('mouseenter', function(){
         $('.hover-content').css('display', 'flex')
         $('.hover-content').removeClass('flip-out-hor-top')
     }).on('mouseleave', function(){
         $('.hover-content').addClass('flip-out-hor-top')
+    })
+    
+    $("#proceed").on('click', function(){
+        let preloader = $("#preloader");
+        preloader.addClass("puff-out-center");
+        $("section").css("display", 'block');
+        $("nav").css("display", 'block');
+        $(".my-info").css("display", "flex");
+        $(".connect").css("display", "flex");
+        setTimeout(function(){
+            preloader.css("display", 'none');
+            
+        }, 1000);
+        
     })
 })

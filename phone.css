@@ -5,6 +5,50 @@
 }
 
 
+/* Preloader */
+#preloader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.pic{
+    padding: 0 31%;
+}
+
+.svg-proceed{
+    padding-left: 0;
+}
+
+
+.intro-proceed{
+    position: initial;
+    max-width: fit-content;
+    margin: auto;
+}
+
+.svg-frame{
+    height: 400px;
+    width: 100vw;
+}
+
+
+/* 
+@media (max-width: 850px){
+    .svg-frame svg{
+        top: -18vw;
+        right: -16vw;
+        transform: scale(0.6) rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
+    }
+}
+
+@media (max-width: 600px){
+    .svg-frame svg{
+        transform: scale(0.5) rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
+    }
+} */
 
 /* Navbar */
 .head-shadow img {
