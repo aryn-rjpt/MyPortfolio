@@ -7,6 +7,7 @@
 
 /* Preloader */
 #preloader{
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,22 +34,6 @@
     height: 400px;
     width: 100vw;
 }
-
-
-/* 
-@media (max-width: 850px){
-    .svg-frame svg{
-        top: -18vw;
-        right: -16vw;
-        transform: scale(0.6) rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
-    }
-}
-
-@media (max-width: 600px){
-    .svg-frame svg{
-        transform: scale(0.5) rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
-    }
-} */
 
 /* Navbar */
 .head-shadow img {
@@ -80,6 +65,12 @@ nav ul {
     width: 5vw;
 }
 
+
+/* Quote */
+/* .quote{
+    font-size: 10px;
+    line-height: 20px;
+} */
 
 
 /* Skills Section */
@@ -165,4 +156,12 @@ nav ul {
 .connect li {
     font-size: 6vw;
     line-height: 10vw;
+}
+
+
+
+
+
+nav, section, .my-info, .connect{
+    display: none;
 }

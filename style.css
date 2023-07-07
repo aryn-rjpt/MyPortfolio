@@ -23,10 +23,10 @@
 
 /* Preloader */
 #preloader {
+    position: fixed;
     background: #0f0f0f;
     width: 100%;
     padding: 0vw 10vw;
-    /* position: fixed; */
     z-index: 100;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -314,8 +314,8 @@ nav ul {
 }
 .quote{
     text-align: center;
-    font-size: 25px;
-    line-height: 45px;
+    font-size: 2vw;
+    line-height: 4vw;
 }
 
 
@@ -616,9 +616,7 @@ nav ul {
 }
 
 
-nav, section, .my-info, .connect{
-    display: none;
-}
+
 
 #preloader {
     display: grid;
